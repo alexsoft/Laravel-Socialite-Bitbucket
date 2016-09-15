@@ -1,0 +1,23 @@
+{
+    "name": "alexsoft/laravel-socialite-bitbucket",
+    "description": "Bitbucket OAuth2 Provider for Laravel Socialite",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alex Plekhanov",
+            "email": "alex@plekhanov.us"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=5.6.4",
+        "laravel/socialite": "^2.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "0.9.5"
+    },
+    "autoload": {
+        "Alexsoft\\LaravelSocialiteBitbucket\\": "src/"
+    }
+}
