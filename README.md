@@ -1,6 +1,8 @@
 # Bitbucket OAuth2 Provider for Laravel Socialite
 
+[![Packagist](https://img.shields.io/packagist/v/alexsoft/laravel-socialite-bitbucket.svg?maxAge=2592000)](https://packagist.org/packages/alexsoft/laravel-socialite-bitbucket)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
+[![StyleCI](https://styleci.io/repos/67543422/shield)](https://styleci.io/repos/67543422)
 
 This package allows you to use Laravel Socialite using OAuth 2 of Bitbucket.
 
