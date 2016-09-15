@@ -20,7 +20,7 @@ class Provider extends ServiceProvider
 
         $provider = $socialite->buildProvider(BitbucketSocialiteProvider::class, $config);
 
-        $socialite->extend('bitbucket2', function() use ($provider) {
+        $socialite->extend('bitbucket2', function () use ($provider) {
             return $provider;
         });
     }

@@ -2,7 +2,6 @@
 
 namespace Alexsoft\LaravelSocialiteBitbucket;
 
-use GuzzleHttp\Exception\ClientException;
 use Illuminate\Support\Arr;
 use Laravel\Socialite\Two\AbstractProvider;
 use Laravel\Socialite\Two\User;
@@ -71,7 +70,7 @@ class BitbucketSocialiteProvider extends AbstractProvider
     protected function getTokenFields($code)
     {
         return array_merge(parent::getTokenFields($code), [
-            'grant_type' => 'authorization_code'
+            'grant_type' => 'authorization_code',
         ]);
     }
 
