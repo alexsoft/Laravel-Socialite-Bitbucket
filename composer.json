@@ -18,6 +18,8 @@
         "mockery/mockery": "0.9.5"
     },
     "autoload": {
-        "Alexsoft\\LaravelSocialiteBitbucket\\": "src/"
+        "psr-4": {
+            "Alexsoft\\LaravelSocialiteBitbucket\\": "src/"
+        }
     }
 }
