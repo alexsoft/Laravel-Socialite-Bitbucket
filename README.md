@@ -49,13 +49,13 @@ use Socialite;
 class AuthController extends Controller
 {
     /**
-     * Redirect the user to the GitHub authentication page.
+     * Redirect the user to the Bitbucket authentication page.
      *
      * @return Response
      */
     public function redirectToProvider()
     {
-        return Socialite::driver('github')->redirect();
+        return Socialite::driver('bitbucket2')->redirect();
     }
 
     /**
@@ -75,8 +75,8 @@ class AuthController extends Controller
 Of course, you will need to define routes to your controller methods:
 
 ```php
-Route::get('auth/github', 'Auth\AuthController@redirectToProvider');
-Route::get('auth/github/callback', 'Auth\AuthController@handleProviderCallback');
+Route::get('auth/bitbucket', 'Auth\AuthController@redirectToProvider');
+Route::get('auth/bitbucket/callback', 'Auth\AuthController@handleProviderCallback');
 ```
 
 The redirect method takes care of sending the user to the OAuth provider, while the user method will read the incoming request and retrieve the user's information from the provider.
