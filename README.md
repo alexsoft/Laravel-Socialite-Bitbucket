@@ -20,7 +20,7 @@ Then you should register service provider in your `config/app.php` file:
 'providers' => [
     // Other service providers
     
-    Alexsoft\LaravelSocialiteBitbucket\BitbucketSocialiteProvider::class,
+    Alexsoft\LaravelSocialiteBitbucket\Provider::class,
 
 ]
 ```
