@@ -14,9 +14,17 @@ You can install the package via composer:
 composer require alexsoft/laravel-socialite-bitbucket
 ```
 
-Then you should register service provider in your `config/app.php` file:
+### Laravel prior to 5.4
+
+You will need to use 1.0 version. Usage of package is the same.
 
 ```
+composer require alexsoft/laravel-socialite-bitbucket:^1.0
+```
+
+Then you should register service provider in your `config/app.php` file:
+
+```php
 'providers' => [
     // Other service providers
     
@@ -27,7 +35,7 @@ Then you should register service provider in your `config/app.php` file:
 
 You will also need to add credentials for the OAuth application that you can get on the Oauth settings page of you Bitbucket account. They should be placed in your `config/services.php` file. You may copy the example configuration below to get started:
 
-```
+```php
 'bitbucket' => [
     'client_id' => env('BITBUCKET_CLIENT_ID'),
     'client_secret' => env('BITBUCKET_CLIENT_SECRET'),
@@ -113,7 +121,7 @@ Unlike Github Bitbucket provides you only one hour valid tokens so you will need
 
 Here is the piece of code that refreshes your token (requires Guzzle):
 
-```
+```php
 $options = [
     'auth' => [config('services.bitbucket.client_id'), config('services.bitbucket.client_secret')],
     'form_params' => [
