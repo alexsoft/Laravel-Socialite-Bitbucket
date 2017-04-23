@@ -10,17 +10,23 @@ This package allows you to use Laravel Socialite using OAuth 2 of Bitbucket.
 
 You can install the package via composer:
 
+---
+
+### Laravel 5.4
+
 ```
 composer require alexsoft/laravel-socialite-bitbucket
 ```
 
-### Laravel prior to 5.4
+### Laravel 5.0 - 5.3
 
-You will need to use 1.0 version. Usage of package is the same.
+You will need to use 1.0 version. Usage remains the same.
 
 ```
 composer require alexsoft/laravel-socialite-bitbucket:^1.0
 ```
+
+---
 
 Then you should register service provider in your `config/app.php` file:
 
