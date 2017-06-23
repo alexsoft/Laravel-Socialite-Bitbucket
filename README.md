@@ -139,7 +139,7 @@ $options = [
 ];
 
 $response = (new GuzzleHttp\Client)
-    ->post(https://bitbucket.org/site/oauth2/access_token, $options)
+    ->post('https://bitbucket.org/site/oauth2/access_token', $options)
     ->getBody()->getContents();
 
 $response = json_decode($response, true);
