@@ -12,7 +12,7 @@ You can install the package via composer:
 
 ---
 
-### Laravel 5.4
+### Laravel 5.4+
 
 ```
 composer require alexsoft/laravel-socialite-bitbucket
