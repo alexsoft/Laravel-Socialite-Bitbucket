@@ -28,7 +28,7 @@ composer require alexsoft/laravel-socialite-bitbucket:^1.0
 
 ---
 
-**Note:** if you use Laravel 5.5 you can skip service provider registration, because it should be auto discovered.
+**Note:** if you use Laravel 5.5+ you can skip service provider registration, because it should be auto discovered.
 
 Then you should register service provider in your `config/app.php` file:
 
