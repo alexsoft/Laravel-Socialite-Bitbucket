@@ -1,5 +1,5 @@
 # Disclaimer
-**Laravel Socialite itself supports Bitbucket oAuth 2. It is strongly recommended to use it. https://laravel.com/docs/8.x/socialite**
+**Laravel Socialite itself supports Bitbucket oAuth 2. It is strongly recommended to use it. https://laravel.com/docs/socialite**
 **This is deprecated now.**
 
 # Bitbucket OAuth2 Provider for Laravel Socialite
